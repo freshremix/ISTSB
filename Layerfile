@@ -1,3 +1,5 @@
+FROM vm/ubuntu:18.04
+
 RUN apt update && apt upgrade -yuf
 RUN sudo apt-get install -y libsqlite3-dev
 RUN sudo apt-get install git
