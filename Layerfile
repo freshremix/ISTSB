@@ -19,8 +19,8 @@ RUN make -j 6
 RUN sudo make altinstall
 RUN python3.11 -m pip install --upgrade pip
 WORKDIR /root/SP
-RUN git clone https://github.com/freshremix/IST4SB.git
-WORKDIR /root/SP/IST4SB
+RUN git clone https://github.com/freshremix/ISTSB.git
+WORKDIR /root/SP/ISTSB
 RUN pip3.11 install -r requirements.txt
 RUN ls
 RUN BACKGROUND python3.11 main.py && \
